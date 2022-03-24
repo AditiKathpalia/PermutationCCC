@@ -1,9 +1,7 @@
 # PermutationCCC
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		Permutation Compression Complexity Causality (PCCC) Toolbox
-				Version 1.0
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+## Permutation Compression Complexity Causality (PCCC) Toolbox
+### Version 1.0
 
 This is a Permutation Compression Complexity Causality or PCCC toolbox which uses 'Compression Complexity Causality (CCC)' and 'Effort to Compress (ETC)', published in the following works:
 
@@ -12,7 +10,6 @@ This is a Permutation Compression Complexity Causality or PCCC toolbox which use
 
 
 This toolbox can be used standalone. It is meant for research purposes only.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Run 'Main_PCCC_surr_analysis.m' for a demo using coupled time-series from Rossler systems in 'Rossler_data_demo.mat'
 
