@@ -3,13 +3,13 @@
 				Version 1.0
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-This is a Permutation Compression Complexity Causality or PCCC toolbox which uses 'Compression Complexity Causality (CCC)' and 'Effort to Compress (ETC)', published in the following works:
+This is a Permutation Compression Complexity Causality or PCCC (MATLAB) toolbox which uses 'Compression Complexity Causality (CCC)' and 'Effort to Compress (ETC)', published in the following works:
 
 1. Kathpalia, A., & Nagaraj, N. (2019). Data-based intervention approach for Complexity-Causality measure. PeerJ Computer Science, 5, e196.
 2. Nagaraj, N., Balasubramanian, K., & Dey, S. (2013). A new complexity measure for time series analysis and classification. The European Physical Journal Special Topics, 222(3), 847-860.
 
 
-This toolbox can be used standalone. It is meant for research purposes only.
+This toolbox can be used standalone after including it on the MATLAB path. It is meant for research purposes only.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Run 'Main_PCCC_surr_analysis.m' for a demo using coupled time-series from Rossler systems in 'Rossler_data_demo.mat'
