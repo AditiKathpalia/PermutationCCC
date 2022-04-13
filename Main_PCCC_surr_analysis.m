@@ -37,7 +37,7 @@ else
     nobs=LEN-tau_to_use*emb_dim1+(INFO_CCC.w);      % As only the 'cause' is to be embedded, remaining values in 'effect' can be used
 end
 
-INFO_CCC.N=nobs;
+INFO_CCC.N=nobs;                %CCC parameters
 
 data(1,:)=ts_data(1,1:LEN,1);       % Loading first trial
 data(2,:)=ts_data(2,1:LEN,1);
@@ -81,11 +81,31 @@ parfor sur_no=1:n_sur
     
 end
 
+fprintf(1,'*****************Surrogate based significance testing result**************** \n\n');
+
 %z-test based surrogate testing
 mean_surr_CCC_dir1=mean(CCC_value_dir1_sur);
 sigma_surr_CCC_dir1=std(CCC_value_dir1_sur);
 [sig_dir1,p_val_dir1] = ztest(CCC_value_dir1,mean_surr_CCC_dir1,sigma_surr_CCC_dir1);
 
+% Display significance testing result for direction 1
+if sig_dir1==1
+    fprintf(1,'Signicant PCCC in direction 1, i.e. from 1st variable/row of data to 2nd variable/row of data.\n\n');
+else
+    fprintf(1,'Insignicant PCCC in direction 1, i.e. from 1st variable/row of data to 2nd variable/row of data.\n\n');
+end
+
+fprintf(1,'****************** \n\n');
+
 mean_surr_CCC_dir2=mean(CCC_value_dir2_sur);
 sigma_surr_CCC_dir2=std(CCC_value_dir2_sur);
 [sig_dir2,p_val_dir2] = ztest(CCC_value_dir2,mean_surr_CCC_dir2,sigma_surr_CCC_dir2);
+
+% Display significance testing result for direction 2
+if sig_dir2==1
+    fprintf(1,'Signicant PCCC in direction 2, i.e. from 2nd variable/row of data to 1st variable/row of data.\n\n');
+else
+    fprintf(1,'Insignicant PCCC in direction 2, i.e. from 2nd variable/row of data to 1st variable/row of data.\n\n');
+end
+
+fprintf(1,'***************************************************************************** \n');
